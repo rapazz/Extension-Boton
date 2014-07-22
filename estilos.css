@@ -1,0 +1,64 @@
+.dropdown-menu {
+position: absolute;
+top: 100%;
+left: -150px;
+z-index: 1000;
+width: 325px;
+height: 350px;
+display: none;
+float: left;
+min-width: 160px;
+padding: 10px 5px;
+margin: 2px 0 0;
+list-style: none;
+font-size: 14px;
+text-align: left;
+background-color: #fff;
+border: 1px solid #ccc;
+border: 1px solid rgba(0,0,0,0.15);
+border-radius: 4px;
+-webkit-box-shadow: 0 6px 12px rgba(0,0,0,0.175);
+box-shadow: 0 6px 12px rgba(0,0,0,0.175);
+background-clip: padding-box;
+}
+
+
+.dropdown{position:relative}
+.dropdown-toggle:focus
+{
+	outline:0
+}
+.dropdown-toggle{border-bottom-right-radius:0;border-top-right-radius:0}
+
+.open>.dropdown-menu
+{
+	display:block
+}
+.dropdown-menu.with-arrow{margin-top:0}
+.dropdown-menu.with-arrow:before{content:" ";position:absolute;left:162px;top:-16px;border:8px solid transparent;border-bottom:8px solid rgba(0,0,0,0.15)}
+.dropdown-menu.with-arrow:after{content:" ";position:absolute;left:163px;top:-14px;border:7px solid transparent;border-bottom:7px solid #fff}
+.panel{border:1px solid #e9e9e9}
+.panel-default{border-color:#e9e9e9}
+.admin-options{z-index:20;line-height:20px}
+.panel-heading{padding:10px 15px;border-bottom:1px solid transparent;border-top-right-radius:3px;border-top-left-radius:3px}
+.list{display: block;}
+.list-group{list-style-type :none;margin-bottom:20px;padding:18px;white-space: normal;}.list-group-item{display:  inline-block;vertical-align: top;position:relative;padding:10px 15px;margin-bottom:-1px;background-color:#fff;border:1px solid #ddd}
+.list-group-item:first-child{border-top-right-radius:4px;border-top-left-radius:4px}
+.list-group-item:last-child{margin-bottom:0;border-bottom-right-radius:4px;border-bottom-left-radius:4px}
+
+.hidden-xs
+{
+	display:none !important
+}
+
+
+.header-container>.top-header .top-nav .nav-left>li {
+border-right: 1px solid rgba(255,255,255,0.1);
+}
+
+.list-unstyled, .list-inline {
+padding-left: 0;
+list-style: none;
+}
+.divTitulo{text-align: center;background: #2C85DF;line-height: 20px;font-size: 14px;padding: 5px 40px;color: white;font-family: 'Open Sans'}
+.divIcono{text-align: left;line-height: 10px;font-size: 12px;padding: 5px 40px;font-family: 'Open Sans'}
