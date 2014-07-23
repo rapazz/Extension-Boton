@@ -11,7 +11,7 @@
       "all_frames" : true
     }
   ],
-  "web_accessible_resources": ["images/rrhh.png"],
+  "web_accessible_resources": ["images/rrhh.png","images/orgIco.png","images/intranet.png"],
   "content_security_policy": "script-src 'self'; object-src 'self'",
   "manifest_version": 2
 }
