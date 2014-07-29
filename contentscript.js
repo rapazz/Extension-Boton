@@ -22,18 +22,28 @@ var a = '<ul class="nav-left list-unstyled"><li class="dropdown"> \
 
 
 
-$('.gb_rc.gb_e.gb_Hc.gb_zc:first').before(a)
-
+//$('.gb_rc.gb_e.gb_Hc.gb_zc:first').before(a)
+$('.gb_qc.gb_Hc.gb_e:first').before(a)
 
 
 
 if (document.getElementById ('idkcl')!=null)
 {
 
-  
-document.getElementById ('idkcl').addEventListener("click",  function(){
- {
 
+document.addEventListener("click",  function(){
+ 
+
+   
+	if (document.getElementById("idpanel").style.display=="block")
+	document.getElementById("idpanel").style.display="none";
+
+
+},false);
+  
+document.getElementById ('idkcl').addEventListener("click",  function(e){
+ {
+ e.stopPropagation();
 if (document.getElementById("idpanel").style.display!="block")
  document.getElementById("idpanel").style.display="block";
 else 
