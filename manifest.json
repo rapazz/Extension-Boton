@@ -1,17 +1,25 @@
 {
   "name" : "Menu Corporativo Komatsu Cummins",
-  "version" : "0.6",
+  "version" : "0.9",
   "description" : "Menu para las aplicaciones transversales de komatsu Cummins, incluido en GMAIL",
+ "background": {
+    "scripts": ["background.js"]
+  },
+  "permissions": [
+        "tabs",
+        "http://*/",
+        "https://*/"
+    ],
     "content_scripts" : [
     {
       "matches" : ["*://*.mail.google.com/*"],
       "js" : ["jquery-2.1.1.min.js","contentscript.js"],
-      "css":["estilos.css"],
+     
       "run_at" : "document_end",
       "all_frames" : true
     }
   ],
-  "web_accessible_resources": ["images/rrhh.png","images/orgIco.png","images/intranet.png"],
+  "web_accessible_resources": ["estilos.css","images/rrhh.png","images/orgIco.png","images/intranet.png"],
   "content_security_policy": "script-src 'self'; object-src 'self'",
   "manifest_version": 2
 }
