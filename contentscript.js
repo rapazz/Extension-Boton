@@ -36,7 +36,12 @@ var a = '<div class="gb_rc gb_e gb_Hc gb_zc"><div class="gb_d gb_e gb_f gb_Hc"> 
 //$('.gb_rc.gb_e.gb_Hc.gb_zc:first').before(a)
 $('.gb_qc.gb_Hc.gb_e:first').before(a)
 
+<<<<<<< HEAD
 
+=======
+//$('.gb_rc.gb_e.gb_Hc.gb_zc:first').before(a)
+$('.gb_qc.gb_Hc.gb_e:first').before(a)
+>>>>>>> FETCH_HEAD
 
 
 
@@ -44,6 +49,7 @@ if (document.getElementById ('idkcl')!=null)
 {
 
 
+<<<<<<< HEAD
 
 document.addEventListener("click",function(){
 
@@ -55,6 +61,21 @@ if (document.getElementById("idpanel").style.display=="block")
 document.getElementById ('idkcl').addEventListener("click",  function(e){
  {
 e.stopPropagation();
+=======
+document.addEventListener("click",  function(){
+ 
+
+   
+	if (document.getElementById("idpanel").style.display=="block")
+	document.getElementById("idpanel").style.display="none";
+
+
+},false);
+  
+document.getElementById ('idkcl').addEventListener("click",  function(e){
+ {
+ e.stopPropagation();
+>>>>>>> FETCH_HEAD
 if (document.getElementById("idpanel").style.display!="block")
  document.getElementById("idpanel").style.display="block";
 else 
